@@ -1,11 +1,22 @@
-# Simple template to create SPA's with plain JavaScript using Babel, Webpack and Webpacks devserver
+# JavaScriptExercises2
 
-## Getting started
+## Links for this week assignment:
 
-- If not alredy done, install nodejs and a sufficient JavaScript Editor (we suggest vs-code)
-- Clone this project
-- In the folder it was cloned into, type npm install
-- In the folder it was cloned into (if you have installed vs-code) type "code ." to open vs-code
-- In the folder it was cloned into type npm start, to run the project via Webpacks development server
-# repo auto created
-# repo auto created
+## Callbacks and more:
+* ![JavaScript Exercises]("https://github.com/Paepke-cph/JavaScriptExercises2")
+
+## Fetch and Promises:
+* ![Jokes]("https://github.com/Paepke-cph/NPM-Jokes")
+* ![SPA Rest Backend]("https://github.com/Paepke-cph/Rest-SPA-Backend")
+* ![SPA Rest Frontend]("https://github.com/Paepke-cph/Rest-SPA-Frontend")
+
+## CORS And Single Page Application
+* ![Backend]("https://github.com/Paepke-cph/CWJ-Backend")
+* ![Frontend]("https://github.com/Paepke-cph/CWJ-Frontend")
+
+## Exam preparation exercise about AJAX, CORS, and SVG
+* ![2nd Exam Prep]("https://github.com/Paepke-cph/ExamPrep2")
+
+## Frontend exercise (last part of exercise from last week)
+* ![Last weeks backend]("https://github.com/Paepke-cph/Rest-Persons-DTO")
+* ![Frontend]("https://github.com/Paepke-cph/Rest-Persons-DTO-Frontend")
