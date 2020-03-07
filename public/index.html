@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container"></div>
+    <h1 class="display-1">All Users</h1>
+    <div>
+      <div class="input">
+        <input
+          id="idInputField"
+          type="text"
+          class="form-control"
+          placeholder="Enter User's Name"
+          aria-describedby="button-addon2"
+        />
+      </div>
+      <!-- Create User Button -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#createUserModal"
+      >
+        Create new User
+      </button>
+      <!-- Edit User Button -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="editUsersButton"
+        data-toggle="modal"
+        data-target="#editUserModal"
+      >
+        Edit User(s)
+      </button>
+
+      <!-- Delete User Button-->
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="deleteUsersButton"
+      >
+        Delete User(s)
+      </button>
+      </div>
+    </div>
+    <table id="table" class="table table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th>NAME</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <!-- MODALS -->
+    <!-- Create User Modal -->
+    <div
+    class="modal fade"
+    id="createUserModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="createUserModalTitle."
+    aria-hidden="true"
+    >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="createUserModalTitle">
+            Create new user
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <span aria-hidden="true">
+              <small class="form-text text-muted">Create your very own user!, just fill out the following fields :D</small>
+            </span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="createUserForm">
+            <div class="form-group">
+              <label for="inputUserNameLabel">Name</label>
+              <input type="text" class="form-control" id="createUserName" aria-describedby="userNameHelp">
+              <small id="userNameHelp" class="form-text text-muted">This should be your name :)</small>
+          </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel </button>
+          <button type="button" class="btn btn-primary" id="createUserButton" data-toggle="modal" data-target="#createUserModal"> Create User! </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Edit User Modal -->
+    <div class="modal fade" id="editUsersModal" tabindex="-1" role="dialog" aria-labelledby="editUserModalTitle." aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editUserModalTitle">
+            Edit
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <span aria-hidden="true">
+              <small id = "editUserNameplate" class="form-text text-muted"></small>
+            </span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="editUserForm">
+            <div>
+              <input id="editUserId" type="hidden" value="">
+            </div>
+            <div class="form-group">
+              <label for="inputUserNameLabel">Name</label>
+              <input type="text" class="form-control" id="editUserName">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel </button>
+          <button type="button" class="btn btn-primary" id="submitEditUserButton"> Submit! </button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
